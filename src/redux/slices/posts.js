@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from '../../axios';
+import axios from '../../api/api';
 
 //делаем асинхронный запрос (называтся будет /posts/fetchPosts) на посты из блога
 export const fetchPosts = createAsyncThunk('/posts/fetchPosts', async () => {
